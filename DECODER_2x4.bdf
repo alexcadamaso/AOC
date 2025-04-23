@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 48 -32 64 136)
+	(rect 112 -32 128 136)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "I1" (rect 5 5 17 15)(font "Arial" )(vertical))
+	(text "F0" (rect 4 5 16 18)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -38,9 +38,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 112 -32 128 136)
+	(rect 48 -32 64 136)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "I0" (rect 4 5 16 15)(font "Arial" )(vertical))
+	(text "F1" (rect 4 5 16 18)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -414,24 +414,12 @@ applicable agreement for further details.
 	(pt 120 352)
 )
 (connector
-	(pt 120 136)
-	(pt 432 136)
-)
-(connector
 	(pt 120 200)
 	(pt 576 200)
 )
 (connector
-	(pt 120 136)
-	(pt 120 200)
-)
-(connector
 	(pt 120 296)
 	(pt 576 296)
-)
-(connector
-	(pt 120 200)
-	(pt 120 296)
 )
 (connector
 	(pt 120 296)
@@ -453,9 +441,20 @@ applicable agreement for further details.
 	(pt 640 104)
 	(pt 680 104)
 )
+(connector
+	(pt 120 136)
+	(pt 432 136)
+)
+(connector
+	(pt 120 200)
+	(pt 120 296)
+)
+(connector
+	(pt 120 136)
+	(pt 120 200)
+)
 (junction (pt 56 152))
 (junction (pt 56 216))
 (junction (pt 56 280))
-(junction (pt 120 136))
 (junction (pt 120 200))
 (junction (pt 120 296))
