@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 208 208)
+	(rect 16 16 144 208)
 	(text "ULA_1bit" (rect 5 0 56 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
@@ -75,25 +75,25 @@ applicable agreement for further details.
 	(port
 		(pt 0 144)
 		(input)
-		(text "CARRY_IN" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "CARRY_IN" (rect 21 139 82 153)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 21 139 39 153)(font "Arial" (font_size 8)))
 		(line (pt 0 144)(pt 16 144))
 	)
 	(port
-		(pt 192 32)
+		(pt 128 32)
 		(output)
 		(text "OUTPUT" (rect 0 0 47 14)(font "Arial" (font_size 8)))
-		(text "OUTPUT" (rect 124 27 171 41)(font "Arial" (font_size 8)))
-		(line (pt 192 32)(pt 176 32))
+		(text "OUTPUT" (rect 60 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 128 32)(pt 112 32))
 	)
 	(port
-		(pt 192 48)
+		(pt 128 48)
 		(output)
-		(text "CARRY_OUT" (rect 0 0 75 14)(font "Arial" (font_size 8)))
-		(text "CARRY_OUT" (rect 96 43 171 57)(font "Arial" (font_size 8)))
-		(line (pt 192 48)(pt 176 48))
+		(text "COUT" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "COUT" (rect 74 43 107 57)(font "Arial" (font_size 8)))
+		(line (pt 128 48)(pt 112 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 176 176))
+		(rectangle (rect 16 16 112 176))
 	)
 )

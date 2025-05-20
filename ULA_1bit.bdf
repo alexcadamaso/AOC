@@ -133,9 +133,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 520 584 536 774)
+	(rect 520 600 536 768)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
-	(text "CARRY_IN" (rect 0 127 12 184)(font "Arial" )(vertical))
+	(text "CIN" (rect 0 127 12 147)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 12 84)(pt 12 59))
@@ -150,9 +150,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 848 408 1024 424)
+	(rect 776 144 952 160)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "CARRY_OUT" (rect 90 0 158 12)(font "Arial" ))
+	(text "OUTPUT" (rect 90 0 133 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -166,9 +166,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 776 144 952 160)
+	(rect 840 408 1016 424)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "OUTPUT" (rect 90 0 133 12)(font "Arial" ))
+	(text "COUT" (rect 90 0 120 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -774,14 +774,6 @@ applicable agreement for further details.
 	(pt 472 464)
 )
 (connector
-	(pt 528 584)
-	(pt 528 400)
-)
-(connector
-	(pt 528 400)
-	(pt 592 400)
-)
-(connector
 	(pt 256 264)
 	(pt 264 264)
 )
@@ -836,10 +828,6 @@ applicable agreement for further details.
 (connector
 	(pt 440 296)
 	(pt 472 296)
-)
-(connector
-	(pt 784 416)
-	(pt 848 416)
 )
 (connector
 	(pt 536 128)
@@ -908,6 +896,18 @@ applicable agreement for further details.
 (connector
 	(pt 136 184)
 	(pt 136 360)
+)
+(connector
+	(pt 592 400)
+	(pt 528 400)
+)
+(connector
+	(pt 528 400)
+	(pt 528 600)
+)
+(connector
+	(pt 784 416)
+	(pt 840 416)
 )
 (junction (pt 168 264))
 (junction (pt 168 200))
