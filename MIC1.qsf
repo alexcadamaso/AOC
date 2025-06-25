@@ -47,7 +47,7 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 # Analysis & Synthesis Assignments
 # ================================
 set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name TOP_LEVEL_ENTITY REGISTER_32bit
+set_global_assignment -name TOP_LEVEL_ENTITY ULA_1bit
 set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "<None>"
 
 # Fitter Assignments
@@ -61,7 +61,7 @@ set_global_assignment -name EDA_FORMAL_VERIFICATION_TOOL "<None>"
 
 # Simulator Assignments
 # =====================
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name SIMULATION_MODE TIMING
 
 # start EDA_TOOL_SETTINGS(eda_simulation)
 # ---------------------------------------
@@ -70,7 +70,7 @@ set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 	# ==============================
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
 
 # end EDA_TOOL_SETTINGS(eda_simulation)
 # -------------------------------------
@@ -80,7 +80,7 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_s
 
 	# Analysis & Synthesis Assignments
 	# ================================
-set_global_assignment -name EDA_INPUT_VCC_NAME VDD -section_id eda_design_synthesis
+set_global_assignment -name EDA_INPUT_VCC_NAME VCC -section_id eda_design_synthesis
 set_global_assignment -name EDA_INPUT_DATA_FORMAT EDIF -section_id eda_design_synthesis
 
 # end EDA_TOOL_SETTINGS(eda_design_synthesis)
@@ -100,6 +100,14 @@ set_global_assignment -name EDA_INPUT_DATA_FORMAT EDIF -section_id eda_design_sy
 
 # end ENTITY(DECODER_2x4)
 # -----------------------
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE SRA1.bdf
+set_global_assignment -name BDF_FILE SLL8.bdf
+set_global_assignment -name BDF_FILE shifter.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_OR.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_CONSTANTS.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_AND.vwf
@@ -117,12 +125,7 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit.vwf
 set_global_assignment -name BDF_FILE ULA_32bit.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_32bit.vwf
 set_global_assignment -name BDF_FILE REGISTER_8bit.bdf
-set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
 set_global_assignment -name VECTOR_WAVEFORM_FILE REGISTER_8bit.vwf
 set_global_assignment -name BDF_FILE REGISTER_32bit.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE REGISTER_32bit.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/user/Jean/REGISTER_32bit.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/user/Documents/CEFET/3 Periodo/AOC/ULA_1bit.vwf"

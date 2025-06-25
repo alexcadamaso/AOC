@@ -1,3 +1,4 @@
+/* Simulator = Quartus II Simulator */
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
 editor if you plan to continue editing the block that represents it in
@@ -135,26 +136,6 @@ SIGNAL("OUTPUT")
 GROUP("F")
 {
 	MEMBERS = "F0", "F1";
-}
-
-SIGNAL("CARRY_IN")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("CARRY_OUT")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
 }
 
 TRANSITION_LIST("A")
@@ -332,24 +313,6 @@ TRANSITION_LIST("OUTPUT")
 	}
 }
 
-TRANSITION_LIST("CARRY_IN")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
-	}
-}
-
-TRANSITION_LIST("CARRY_OUT")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 2000.0;
-	}
-}
-
 DISPLAY_LINE
 {
 	CHANNEL = "F";
@@ -449,24 +412,6 @@ DISPLAY_LINE
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "CARRY_IN";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 11;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "CARRY_OUT";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 12;
 	TREE_LEVEL = 0;
 }
 
