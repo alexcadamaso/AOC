@@ -2,34 +2,73 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ULA_8bit
+# -- Compiling module ULA_32bit
 # 
 # Top level modules:
-# 	ULA_8bit
+# 	ULA_32bit
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ULA_8bit_vlg_sample_tst
-# -- Compiling module ULA_8bit_vlg_check_tst
-# -- Compiling module ULA_8bit_vlg_vec_tst
+# -- Compiling module ULA_32bit_vlg_sample_tst
+# -- Compiling module ULA_32bit_vlg_check_tst
+# -- Compiling module ULA_32bit_vlg_vec_tst
 # 
 # Top level modules:
-# 	ULA_8bit_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.ULA_8bit_vlg_vec_tst 
-# Loading work.ULA_8bit_vlg_vec_tst
-# Loading work.ULA_8bit
+# 	ULA_32bit_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.ULA_32bit_vlg_vec_tst 
+# Loading work.ULA_32bit_vlg_vec_tst
+# Loading work.ULA_32bit
 # Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
-# Loading work.ULA_8bit_vlg_sample_tst
-# Loading work.ULA_8bit_vlg_check_tst
+# Loading work.ULA_32bit_vlg_sample_tst
+# Loading work.ULA_32bit_vlg_check_tst
 # SDF 10.1d Compiler 2012.11 Nov  2 2012
 # 
 # Loading instances from MIC1_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Loading timing data from MIC1_v.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /ULA_8bit_vlg_vec_tst File: MIC1.vt
-# Simulation passed !
-# ** Note: $finish    : MIC1.vt(314)
-#    Time: 1 us  Iteration: 0  Instance: /ULA_8bit_vlg_vec_tst/tb_out
+#    Time: 0 ps  Iteration: 0  Instance: /ULA_32bit_vlg_vec_tst File: MIC1.vt
+# ERROR! Vector Mismatch for output port OUTPUT[0] :: @time = 125000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx10100101
+#      Real value = 11111111111111111111111111111110
+# ERROR! Vector Mismatch for output port OUTPUT[1] :: @time = 125000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx10100101
+#      Real value = 11111111111111111111111111111110
+# ERROR! Vector Mismatch for output port OUTPUT[3] :: @time = 125000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx10100101
+#      Real value = 11111111111111111111111111111110
+# ERROR! Vector Mismatch for output port OUTPUT[4] :: @time = 125000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx10100101
+#      Real value = 11111111111111111111111111111110
+# ERROR! Vector Mismatch for output port OUTPUT[6] :: @time = 125000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx10100101
+#      Real value = 11111111111111111111111111111110
+# ERROR! Vector Mismatch for output port OUTPUT[2] :: @time = 250000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx01011010
+#      Real value = 11111110111111101111111011111110
+# ERROR! Vector Mismatch for output port OUTPUT[5] :: @time = 250000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx01011010
+#      Real value = 11111110111111101111111011111110
+# ERROR! Vector Mismatch for output port OUTPUT[7] :: @time = 250000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx01011010
+#      Real value = 11111110111111101111111011111110
+# ERROR! Vector Mismatch for output port OUTPUT[0] :: @time = 625000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx01011010
+#      Real value = 11111110111111101111111011111111
+# ERROR! Vector Mismatch for output port OUTPUT[0] :: @time = 875000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx10100101
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port OUTPUT[2] :: @time = 875000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx10100101
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port OUTPUT[5] :: @time = 875000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx10100101
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port OUTPUT[7] :: @time = 875000.000 ps
+#      Expected value = xxxxxxxxxxxxxxxxxxxxxxxx10100101
+#      Real value = 00000000000000000000000000000000
+#          13 mismatched vectors : Simulation failed !
+# ** Note: $finish    : MIC1.vt(798)
+#    Time: 1 us  Iteration: 0  Instance: /ULA_32bit_vlg_vec_tst/tb_out
