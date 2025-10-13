@@ -1,3 +1,4 @@
+/* Simulator = Quartus II Simulator */
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
 editor if you plan to continue editing the block that represents it in
@@ -72,7 +73,7 @@ SIGNAL("COUT")
 	PARENT = "";
 }
 
-SIGNAL("ENABLE")
+SIGNAL("EN")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -143,7 +144,7 @@ TRANSITION_LIST("COUT")
 	}
 }
 
-TRANSITION_LIST("ENABLE")
+TRANSITION_LIST("EN")
 {
 	NODE
 	{
@@ -163,7 +164,7 @@ TRANSITION_LIST("O")
 
 DISPLAY_LINE
 {
-	CHANNEL = "A";
+	CHANNEL = "EN";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -172,7 +173,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "B";
+	CHANNEL = "A";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -181,7 +182,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "CIN";
+	CHANNEL = "B";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -190,7 +191,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "COUT";
+	CHANNEL = "CIN";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -199,7 +200,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "ENABLE";
+	CHANNEL = "COUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;

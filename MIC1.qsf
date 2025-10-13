@@ -18,7 +18,7 @@
 #
 # Quartus II 64-Bit
 # Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-# Date created = 01:03:02  May 17, 2025
+# Date created = 11:46:20  October 04, 2024
 #
 # -------------------------------------------------------------------------- #
 #
@@ -36,153 +36,52 @@
 # -------------------------------------------------------------------------- #
 
 
-
-# Project-Wide Assignments
-# ========================
-<<<<<<< HEAD
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE AUTO
+set_global_assignment -name TOP_LEVEL_ENTITY ula_8bit
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:48:43  APRIL 02, 2025"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:46:20  OCTOBER 04, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-
-# Analysis & Synthesis Assignments
-# ================================
-set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name TOP_LEVEL_ENTITY ULA_32bit
-set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "<None>"
-
-# Fitter Assignments
-# ==================
-set_global_assignment -name DEVICE AUTO
-
-# EDA Netlist Writer Assignments
-# ==============================
+set_global_assignment -name SIMULATION_MODE TIMING
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_FORMAL_VERIFICATION_TOOL "<None>"
-
-# Simulator Assignments
-# =====================
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-=======
-set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:48:43  APRIL 02, 2025"
-set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
-set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-
-# Analysis & Synthesis Assignments
-# ================================
-set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name TOP_LEVEL_ENTITY ULA_32bit
-set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "<None>"
-
-# Fitter Assignments
-# ==================
-set_global_assignment -name DEVICE AUTO
-
-# EDA Netlist Writer Assignments
-# ==============================
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_FORMAL_VERIFICATION_TOOL "<None>"
-
-# Simulator Assignments
-# =====================
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
->>>>>>> origin/main
-
-# start EDA_TOOL_SETTINGS(eda_simulation)
-# ---------------------------------------
-
-	# EDA Netlist Writer Assignments
-	# ==============================
-<<<<<<< HEAD
-set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
-=======
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
->>>>>>> origin/main
-
-# end EDA_TOOL_SETTINGS(eda_simulation)
-# -------------------------------------
-
-# start EDA_TOOL_SETTINGS(eda_design_synthesis)
-# ---------------------------------------------
-
-	# Analysis & Synthesis Assignments
-	# ================================
-<<<<<<< HEAD
-set_global_assignment -name EDA_INPUT_VCC_NAME VDD -section_id eda_design_synthesis
-set_global_assignment -name EDA_INPUT_DATA_FORMAT EDIF -section_id eda_design_synthesis
-=======
-set_global_assignment -name EDA_INPUT_VCC_NAME VDD -section_id eda_design_synthesis
-set_global_assignment -name EDA_INPUT_DATA_FORMAT EDIF -section_id eda_design_synthesis
->>>>>>> origin/main
-
-# end EDA_TOOL_SETTINGS(eda_design_synthesis)
-# -------------------------------------------
-
-# -------------------------
-# start ENTITY(DECODER_2x4)
-
-	# start DESIGN_PARTITION(Top)
-	# ---------------------------
-
-		# Incremental Compilation Assignments
-		# ===================================
-
-	# end DESIGN_PARTITION(Top)
-	# -------------------------
-
-# end ENTITY(DECODER_2x4)
-# -----------------------
-<<<<<<< HEAD
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_OR.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_CONSTANTS.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_AND.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MPC_generator.vwf
+set_global_assignment -name BDF_FILE decoder_2x4.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE decoder_2x4.vwf
+set_global_assignment -name BDF_FILE logic_unit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE logic_unit.vwf
+set_global_assignment -name BDF_FILE ula_1bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ula_1bit.vwf
+set_global_assignment -name BDF_FILE full_adder_1bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_1bit_b.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE full_adder_1bit.vwf
+set_global_assignment -name BDF_FILE ula_8bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ula_8bit.vwf
+set_global_assignment -name BDF_FILE ula_32bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ula_32bit.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_ADD.vwf
-set_global_assignment -name BDF_FILE DECODER_2x4.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE DECODER_2x4.vwf
-set_global_assignment -name BDF_FILE FULL_ADDER_1bit.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE FULL_ADDER_1bit.vwf
-set_global_assignment -name BDF_FILE ULA_1bit.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_1bit.vwf
-set_global_assignment -name BDF_FILE LOGICAL_UNIT.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE LOGICAL_UNIT.vwf
-set_global_assignment -name BDF_FILE ULA_8bit.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit.vwf
-set_global_assignment -name BDF_FILE ULA_32bit.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_32bit.vwf
-set_global_assignment -name BDF_FILE Registrador_4bit.bdf
-set_global_assignment -name BDF_FILE Registrador_32bit.bdf
-set_global_assignment -name BDF_FILE REGISTER8bit.bdf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_AND.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_CONSTANTS.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_OR.vwf
+set_global_assignment -name BDF_FILE register_1bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE register_1bit.vwf
+set_global_assignment -name BDF_FILE register_8bit.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE REGISTER8bit.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/igor/Documents/AOC-main/REGISTER8bit.vwf"
-=======
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_OR.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_CONSTANTS.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_AND.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_ADD.vwf
-set_global_assignment -name BDF_FILE DECODER_2x4.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE DECODER_2x4.vwf
-set_global_assignment -name BDF_FILE FULL_ADDER_1bit.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE FULL_ADDER_1bit.vwf
-set_global_assignment -name BDF_FILE ULA_1bit.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_1bit.vwf
-set_global_assignment -name BDF_FILE LOGICAL_UNIT.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE LOGICAL_UNIT.vwf
-set_global_assignment -name BDF_FILE ULA_8bit.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit.vwf
-set_global_assignment -name BDF_FILE ULA_32bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE register_8bit.vwf
+set_global_assignment -name BDF_FILE shifter.bdf
+set_global_assignment -name BDF_FILE sra1.bdf
+set_global_assignment -name BDF_FILE sll8.bdf
+set_global_assignment -name BDF_FILE register_32bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE register_32bit.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE SHIFTER.vwf
+set_global_assignment -name BDF_FILE MPC_generator.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/jeanj/Documents/CEFET/3 PERIODO/AOC/ula_8bit.vwf"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_32bit.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/user/Jean/ULA_32bit_ADD.vwf"
->>>>>>> origin/main
