@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 56 208 224 224)
+	(rect 200 520 368 536)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "MBR_IN[7..0]" (rect 5 0 72 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 64 408 232 424)
+	(rect 208 664 376 680)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "N" (rect 5 0 13 12)(font "Arial" ))
 	(pt 168 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 64 480 232 496)
+	(rect 208 744 376 760)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLOCK" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 64 560 232 576)
+	(rect 216 768 384 784)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "Z" (rect 5 0 12 12)(font "Arial" ))
 	(pt 168 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 632 -56 648 112)
+	(rect 688 296 704 464)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
 	(text "JAM[2..0]" (rect 4 5 16 52)(font "Arial" )(vertical))
 	(pt 8 168)
@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 664 -56 680 152)
+	(rect 720 256 736 464)
 	(text "INPUT" (rect 6 165 16 193)(font "Arial" (font_size 6))(vertical))
 	(text "NEXT_ADDRESS[8..0]" (rect 4 5 16 117)(font "Arial" )(vertical))
 	(pt 8 208)
@@ -119,7 +119,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1120 -24 1136 152)
+	(rect 1296 224 1312 400)
 	(text "OUTPUT" (rect 0 137 10 175)(font "Arial" (font_size 6))(vertical))
 	(text "MPC[8..0]" (rect 1 5 13 54)(font "Arial" )(vertical))
 	(pt 8 176)
@@ -135,7 +135,7 @@ applicable agreement for further details.
 	(rotate90)
 )
 (symbol
-	(rect 520 544 584 624)
+	(rect 576 752 640 832)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst8" (rect 3 68 26 80)(font "Arial" ))
 	(port
@@ -185,7 +185,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 744 184 808 232)
+	(rect 776 496 840 544)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst9" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -217,7 +217,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 728 376 792 424)
+	(rect 784 632 848 680)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst10" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -249,7 +249,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 728 536 792 584)
+	(rect 784 744 848 792)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst11" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -281,7 +281,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 864 448 928 496)
+	(rect 920 704 984 752)
 	(text "OR3" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 37 23 51)(font "Arial" (font_size 8)))
 	(port
@@ -321,7 +321,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 896 264 960 312)
+	(rect 952 520 1016 568)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst12" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -354,7 +354,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 520 392 584 472)
+	(rect 576 648 640 728)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst1" (rect 3 68 26 80)(font "Arial" ))
 	(port
@@ -404,173 +404,163 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(text "JAM[1]" (rect 693 376 727 388)(font "Arial" ))
-	(pt 728 392)
-	(pt 640 392)
+	(text "JAM[2]" (rect 742 496 776 508)(font "Arial" ))
+	(pt 776 512)
+	(pt 696 512)
 )
 (connector
-	(pt 432 432)
-	(pt 520 432)
-)
-(connector
-	(pt 832 400)
-	(pt 832 464)
-)
-(connector
-	(pt 832 464)
-	(pt 864 464)
-)
-(connector
-	(pt 832 480)
-	(pt 864 480)
-)
-(connector
-	(text "NEXT_ADDRESS[8]" (rect 703 456 802 468)(font "Arial" ))
-	(pt 672 472)
-	(pt 864 472)
-)
-(connector
-	(pt 832 280)
-	(pt 896 280)
+	(pt 776 528)
+	(pt 368 528)
 	(bus)
 )
 (connector
-	(pt 584 416)
-	(pt 728 416)
+	(pt 376 672)
+	(pt 576 672)
 )
 (connector
-	(pt 728 416)
-	(pt 728 408)
+	(pt 488 688)
+	(pt 576 688)
 )
 (connector
-	(pt 792 400)
-	(pt 832 400)
+	(pt 376 752)
+	(pt 488 752)
 )
 (connector
-	(pt 432 488)
-	(pt 232 488)
+	(pt 848 656)
+	(pt 888 656)
 )
 (connector
-	(pt 232 416)
-	(pt 520 416)
-)
-(connector
-	(text "JAM[2]" (rect 710 184 744 196)(font "Arial" ))
-	(pt 640 200)
-	(pt 744 200)
-)
-(connector
-	(pt 832 208)
-	(pt 808 208)
+	(pt 888 520)
+	(pt 840 520)
 	(bus)
 )
 (connector
-	(pt 832 280)
-	(pt 832 208)
+	(text "JAM[0]" (rect 737 744 771 756)(font "Arial" ))
+	(pt 696 760)
+	(pt 784 760)
+)
+(connector
+	(pt 888 768)
+	(pt 848 768)
+)
+(connector
+	(pt 488 792)
+	(pt 576 792)
+)
+(connector
+	(pt 384 776)
+	(pt 576 776)
+)
+(connector
+	(pt 784 776)
+	(pt 640 776)
+)
+(connector
+	(pt 888 656)
+	(pt 888 720)
+)
+(connector
+	(pt 888 720)
+	(pt 920 720)
+)
+(connector
+	(pt 888 736)
+	(pt 920 736)
+)
+(connector
+	(pt 888 768)
+	(pt 888 736)
+)
+(connector
+	(text "NEXT_ADDRESS[8]" (rect 759 712 858 724)(font "Arial" ))
+	(pt 728 728)
+	(pt 920 728)
+)
+(connector
+	(pt 888 520)
+	(pt 888 536)
 	(bus)
 )
 (connector
-	(pt 640 112)
-	(pt 640 200)
+	(text "MPC[7..0]" (rect 1240 528 1289 540)(font "Arial" ))
+	(pt 1304 544)
+	(pt 1016 544)
 	(bus)
 )
 (connector
-	(pt 224 216)
-	(pt 744 216)
+	(pt 888 536)
+	(pt 952 536)
 	(bus)
 )
 (connector
-	(pt 832 296)
-	(pt 832 320)
-	(bus)
-)
-(connector
-	(pt 896 296)
-	(pt 832 296)
-	(bus)
-)
-(connector
-	(text "NEXT_ADDRESS[7..0]" (rect 829 304 941 316)(font "Arial" ))
-	(pt 672 320)
-	(pt 832 320)
-	(bus)
-)
-(connector
-	(pt 672 152)
-	(pt 672 320)
-	(bus)
-)
-(connector
-	(pt 672 320)
-	(pt 672 472)
-	(bus)
-)
-(connector
-	(text "MPC[8]" (rect 1005 464 1041 476)(font "Arial" ))
-	(pt 928 472)
-	(pt 1128 472)
-)
-(connector
-	(text "MPC[7..0]" (rect 1000 272 1049 284)(font "Arial" ))
-	(pt 960 288)
-	(pt 1128 288)
-	(bus)
-)
-(connector
-	(pt 1128 152)
-	(pt 1128 288)
-	(bus)
-)
-(connector
-	(pt 1128 288)
-	(pt 1128 472)
-	(bus)
-)
-(connector
-	(text "JAM[0]" (rect 681 536 715 548)(font "Arial" ))
-	(pt 640 552)
+	(text "NEXT_ADDRESS[7..0]" (rect 885 536 997 548)(font "Arial" ))
 	(pt 728 552)
-)
-(connector
-	(pt 832 560)
-	(pt 792 560)
-)
-(connector
-	(pt 832 480)
-	(pt 832 560)
-)
-(connector
-	(pt 640 200)
-	(pt 640 392)
+	(pt 952 552)
 	(bus)
 )
 (connector
-	(pt 640 392)
-	(pt 640 552)
+	(pt 640 672)
+	(pt 784 672)
+)
+(connector
+	(pt 784 672)
+	(pt 784 664)
+)
+(connector
+	(text "MPC[8]" (rect 1197 712 1233 724)(font "Arial" ))
+	(pt 984 728)
+	(pt 1304 728)
+)
+(connector
+	(text "JAM[1]" (rect 749 632 783 644)(font "Arial" ))
+	(pt 696 648)
+	(pt 784 648)
+)
+(connector
+	(pt 696 464)
+	(pt 696 512)
 	(bus)
 )
 (connector
-	(pt 432 584)
-	(pt 520 584)
+	(pt 488 688)
+	(pt 488 752)
 )
 (connector
-	(pt 432 432)
-	(pt 432 488)
+	(pt 488 752)
+	(pt 488 792)
 )
 (connector
-	(pt 432 488)
-	(pt 432 584)
+	(pt 728 464)
+	(pt 728 552)
+	(bus)
 )
 (connector
-	(pt 584 568)
-	(pt 728 568)
+	(pt 728 552)
+	(pt 728 728)
+	(bus)
 )
 (connector
-	(pt 232 568)
-	(pt 520 568)
+	(pt 1304 400)
+	(pt 1304 544)
+	(bus)
 )
-(junction (pt 640 392))
-(junction (pt 432 488))
-(junction (pt 640 200))
-(junction (pt 672 320))
-(junction (pt 1128 288))
+(connector
+	(pt 1304 544)
+	(pt 1304 728)
+	(bus)
+)
+(connector
+	(pt 696 512)
+	(pt 696 648)
+	(bus)
+)
+(connector
+	(pt 696 648)
+	(pt 696 760)
+	(bus)
+)
+(junction (pt 696 512))
+(junction (pt 488 752))
+(junction (pt 1304 544))
+(junction (pt 728 552))
+(junction (pt 696 648))

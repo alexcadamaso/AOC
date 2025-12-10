@@ -3,7 +3,7 @@ $comment
 		vcd file MIC1.msim.vcd -direction
 $end
 $date
-	Mon Oct 13 16:23:13 2025
+	Mon Apr 21 22:40:02 2025
 $end
 $version
 	ModelSim Version 10.1d
@@ -11,446 +11,129 @@ $end
 $timescale
 	1ps
 $end
-$scope module MPC_generator_vlg_vec_tst $end
-$var reg 1 ! CLOCK $end
-$var reg 3 " JAM [2:0] $end
-$var reg 8 # MBR_IN [7:0] $end
-$var reg 1 $ N $end
-$var reg 9 % NEXT_ADDRESS [8:0] $end
-$var reg 1 & Z $end
-$var wire 1 ' MPC [8] $end
-$var wire 1 ( MPC [7] $end
-$var wire 1 ) MPC [6] $end
-$var wire 1 * MPC [5] $end
-$var wire 1 + MPC [4] $end
-$var wire 1 , MPC [3] $end
-$var wire 1 - MPC [2] $end
-$var wire 1 . MPC [1] $end
-$var wire 1 / MPC [0] $end
-$var wire 1 0 sampler $end
+$scope module ULA_1bit_vlg_vec_tst $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var reg 1 # CIN $end
+$var reg 1 $ ENA $end
+$var reg 1 % ENB $end
+$var reg 1 & F0 $end
+$var reg 1 ' F1 $end
+$var reg 1 ( INVA $end
+$var wire 1 ) COUT $end
+$var wire 1 * OUTPUT $end
+$var wire 1 + sampler $end
 $scope module i1 $end
-$var wire 1 1 gnd $end
-$var wire 1 2 vcc $end
-$var wire 1 3 unknown $end
-$var tri1 1 4 devclrn $end
-$var tri1 1 5 devpor $end
-$var tri1 1 6 devoe $end
-$var wire 1 7 CLOCK~combout $end
-$var wire 1 8 CLOCK~clkctrl_outclk $end
-$var wire 1 9 N~combout $end
-$var wire 1 : inst1~regout $end
-$var wire 1 ; Z~combout $end
-$var wire 1 < inst8~feeder_combout $end
-$var wire 1 = inst8~regout $end
-$var wire 1 > inst~0_combout $end
-$var wire 1 ? inst~combout $end
-$var wire 1 @ inst12 [7] $end
-$var wire 1 A inst12 [6] $end
-$var wire 1 B inst12 [5] $end
-$var wire 1 C inst12 [4] $end
-$var wire 1 D inst12 [3] $end
-$var wire 1 E inst12 [2] $end
-$var wire 1 F inst12 [1] $end
-$var wire 1 G inst12 [0] $end
-$var wire 1 H NEXT_ADDRESS~combout [8] $end
-$var wire 1 I NEXT_ADDRESS~combout [7] $end
-$var wire 1 J NEXT_ADDRESS~combout [6] $end
-$var wire 1 K NEXT_ADDRESS~combout [5] $end
-$var wire 1 L NEXT_ADDRESS~combout [4] $end
-$var wire 1 M NEXT_ADDRESS~combout [3] $end
-$var wire 1 N NEXT_ADDRESS~combout [2] $end
-$var wire 1 O NEXT_ADDRESS~combout [1] $end
-$var wire 1 P NEXT_ADDRESS~combout [0] $end
-$var wire 1 Q MBR_IN~combout [7] $end
-$var wire 1 R MBR_IN~combout [6] $end
-$var wire 1 S MBR_IN~combout [5] $end
-$var wire 1 T MBR_IN~combout [4] $end
-$var wire 1 U MBR_IN~combout [3] $end
-$var wire 1 V MBR_IN~combout [2] $end
-$var wire 1 W MBR_IN~combout [1] $end
-$var wire 1 X MBR_IN~combout [0] $end
-$var wire 1 Y JAM~combout [2] $end
-$var wire 1 Z JAM~combout [1] $end
-$var wire 1 [ JAM~combout [0] $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var tri1 1 / devclrn $end
+$var tri1 1 0 devpor $end
+$var tri1 1 1 devoe $end
+$var wire 1 2 ENA~combout $end
+$var wire 1 3 B~combout $end
+$var wire 1 4 F0~combout $end
+$var wire 1 5 ENB~combout $end
+$var wire 1 6 inst1~combout $end
+$var wire 1 7 F1~combout $end
+$var wire 1 8 INVA~combout $end
+$var wire 1 9 A~combout $end
+$var wire 1 : inst4~combout $end
+$var wire 1 ; soma~0_combout $end
+$var wire 1 < CIN~combout $end
+$var wire 1 = full_adder|inst12~3_combout $end
+$var wire 1 > full_adder|inst12~2_combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0!
-b0 "
-b10100101 #
+1!
+1"
+0#
 0$
-b0 %
+0%
 0&
-x/
-x.
-x-
-x,
-x+
-x*
-x)
-x(
-x'
-x0
-01
-12
-x3
-14
-15
-16
-07
-x8
-09
-0:
-0;
-x<
-0=
-x>
-x?
-xG
-xF
-xE
-xD
-xC
-xB
-xA
-x@
-0P
-0O
-0N
-0M
-0L
-0K
-0J
-0I
-0H
-1X
-0W
-1V
-0U
-0T
-1S
-0R
-1Q
-0[
-0Z
-0Y
-$end
-#122
-08
-#445
-0>
-#4955
-0<
-#5051
-0?
-#5314
-0G
-#5448
-0C
-#5453
-0E
-#5656
-0F
-#5771
-0D
-#5795
-0@
-#5994
-0A
-#6071
-0B
-#8753
-0/
-#8881
-0+
-#9121
 0'
-#9338
 0(
-#9482
-0*
-#9506
-0-
-#9777
-0.
-#10084
-0,
-#11148
 0)
-#100000
-1!
-00
-#100989
-17
-#101111
-18
-#200000
-b100 "
-0!
-10
-#200872
-1Y
-#200989
-07
-#201111
-08
-#206191
-1E
-#206198
-1B
-#206338
-1G
-#206340
-1@
-#209609
-1*
-#209777
-1/
-#209883
-1(
-#210244
-1-
-#300000
-1!
-00
-#300989
-17
-#301111
-18
-#400000
-b100000000 %
-0!
-10
-#400850
-1H
-#400989
-07
-#401111
-08
-#405901
-1?
-#409971
-1'
-#500000
-1!
-00
-#500989
-17
-#501111
-18
-#600000
-b110 "
-b100000010 %
-b100000011 %
-b10 "
-b11 %
-0!
-10
-#600850
-0H
-1O
-1P
-#600852
-1Z
-#600872
-0Y
-#600989
-07
-#601111
-08
-#605901
-0?
-#606191
-0E
-#606198
-0B
-#606340
-0@
-#606506
-1F
-#609609
 0*
-#609883
-0(
-#609971
-0'
-#610244
-0-
-#610627
-1.
-#680000
-1$
-00
-#680860
-19
-#700000
-1!
-0$
-10
-#700860
-09
-#700989
-17
-#701111
-18
-#702609
-1:
-#702932
-1>
-#703599
-1?
-#707669
-1'
-#800000
-b11 "
-b111 %
-b1 "
-b101 %
-b100 %
-0!
-00
-#800842
-1N
-#800850
-1[
-0O
-0P
-#800852
-0Z
-#800989
-07
-#801111
-08
-#806164
-0G
-#806185
-0>
-#806295
-1E
-#806506
-0F
-#806852
-0?
-#809603
-0/
-#810348
+x+
+0,
 1-
-#810627
-0.
-#810922
-0'
-#880000
-1&
-10
-#880850
-1;
-#885805
-1<
-#900000
-1!
-0&
-00
-#900850
-0;
-#900989
-17
-#901111
-18
-#902609
-0:
-1=
-#903054
-1>
-#903721
-1?
-#905805
-0<
-#907791
-1'
-#999000
-b0 "
-b101 %
-10
-#999850
-0[
-1P
-#1000000
-0!
-00
-#1000989
-07
-#1001111
-08
-#1005095
-0>
-#1005164
-1G
-#1005762
-0?
-#1008603
+x.
 1/
-#1009832
-0'
-#1080000
-1$
 10
-#1080860
-19
-#1100000
-1!
-0$
-00
-#1100860
-09
-#1100989
-17
-#1101111
-18
-#1102609
-1:
-0=
-#1200000
-b111 %
-b110 %
-0!
-10
-#1200850
-1O
-0P
-#1200989
+11
+02
+13
+04
+05
+06
 07
-#1201111
 08
-#1206164
-0G
-#1206506
-1F
-#1209603
-0/
-#1210627
-1.
-#1280000
-1&
-00
-#1280850
-1;
-#1285805
-1<
-#1300000
-1!
-0&
-10
-#1300850
-0;
-#1300989
-17
-#1301111
-18
-#1302609
+19
 0:
-1=
-#1305805
+0;
 0<
-#1400000
+0=
+0>
+$end
+#100000
+1%
+15
+0+
+16
+#200000
+1$
+0%
+12
+05
+1+
+1:
+06
+#300000
+1%
+15
+0+
+1=
+16
+1;
+1*
+#400000
+1(
+0$
+0%
+18
+02
+05
+1+
+0=
+06
+0;
+0*
+#500000
+1%
+15
+0+
+1=
+16
+1;
+1*
+#600000
+1$
+0%
+12
+05
+1+
+0:
+0=
+06
+0;
+0*
+#700000
+1%
+15
+0+
+16
+#800000

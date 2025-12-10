@@ -32,6 +32,16 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
+SIGNAL("A")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("A[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -39,7 +49,7 @@ SIGNAL("A[7]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "A";
 }
 
 SIGNAL("A[6]")
@@ -49,7 +59,7 @@ SIGNAL("A[6]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "A";
 }
 
 SIGNAL("A[5]")
@@ -59,7 +69,7 @@ SIGNAL("A[5]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "A";
 }
 
 SIGNAL("A[4]")
@@ -69,7 +79,7 @@ SIGNAL("A[4]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "A";
 }
 
 SIGNAL("A[3]")
@@ -79,7 +89,7 @@ SIGNAL("A[3]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "A";
 }
 
 SIGNAL("A[2]")
@@ -89,7 +99,7 @@ SIGNAL("A[2]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "A";
 }
 
 SIGNAL("A[1]")
@@ -99,7 +109,7 @@ SIGNAL("A[1]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "A";
 }
 
 SIGNAL("A[0]")
@@ -108,6 +118,16 @@ SIGNAL("A[0]")
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "A";
+}
+
+SIGNAL("B")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
 	DIRECTION = INPUT;
 	PARENT = "";
 }
@@ -119,7 +139,7 @@ SIGNAL("B[7]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "B";
 }
 
 SIGNAL("B[6]")
@@ -129,7 +149,7 @@ SIGNAL("B[6]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "B";
 }
 
 SIGNAL("B[5]")
@@ -139,7 +159,7 @@ SIGNAL("B[5]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "B";
 }
 
 SIGNAL("B[4]")
@@ -149,7 +169,7 @@ SIGNAL("B[4]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "B";
 }
 
 SIGNAL("B[3]")
@@ -159,7 +179,7 @@ SIGNAL("B[3]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "B";
 }
 
 SIGNAL("B[2]")
@@ -169,7 +189,7 @@ SIGNAL("B[2]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "B";
 }
 
 SIGNAL("B[1]")
@@ -179,7 +199,7 @@ SIGNAL("B[1]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "B";
 }
 
 SIGNAL("B[0]")
@@ -189,7 +209,7 @@ SIGNAL("B[0]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "B";
 }
 
 SIGNAL("CIN")
@@ -262,6 +282,16 @@ SIGNAL("INVA")
 	PARENT = "";
 }
 
+SIGNAL("OUTPUT")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
 SIGNAL("OUTPUT[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -269,7 +299,7 @@ SIGNAL("OUTPUT[7]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "";
+	PARENT = "OUTPUT";
 }
 
 SIGNAL("OUTPUT[6]")
@@ -279,7 +309,7 @@ SIGNAL("OUTPUT[6]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "";
+	PARENT = "OUTPUT";
 }
 
 SIGNAL("OUTPUT[5]")
@@ -289,7 +319,7 @@ SIGNAL("OUTPUT[5]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "";
+	PARENT = "OUTPUT";
 }
 
 SIGNAL("OUTPUT[4]")
@@ -299,7 +329,7 @@ SIGNAL("OUTPUT[4]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "";
+	PARENT = "OUTPUT";
 }
 
 SIGNAL("OUTPUT[3]")
@@ -309,7 +339,7 @@ SIGNAL("OUTPUT[3]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "";
+	PARENT = "OUTPUT";
 }
 
 SIGNAL("OUTPUT[2]")
@@ -319,7 +349,7 @@ SIGNAL("OUTPUT[2]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "";
+	PARENT = "OUTPUT";
 }
 
 SIGNAL("OUTPUT[1]")
@@ -329,7 +359,7 @@ SIGNAL("OUTPUT[1]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "";
+	PARENT = "OUTPUT";
 }
 
 SIGNAL("OUTPUT[0]")
@@ -339,22 +369,7 @@ SIGNAL("OUTPUT[0]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-GROUP("A")
-{
-	MEMBERS = "A[7]", "A[6]", "A[5]", "A[4]", "A[3]", "A[2]", "A[1]", "A[0]";
-}
-
-GROUP("B")
-{
-	MEMBERS = "B[7]", "B[6]", "B[5]", "B[4]", "B[3]", "B[2]", "B[1]", "B[0]";
-}
-
-GROUP("OUTPUT")
-{
-	MEMBERS = "OUTPUT[7]", "OUTPUT[6]", "OUTPUT[5]", "OUTPUT[4]", "OUTPUT[3]", "OUTPUT[2]", "OUTPUT[1]", "OUTPUT[0]";
+	PARENT = "OUTPUT";
 }
 
 TRANSITION_LIST("A[7]")
